@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent">
+	android:layout_height="match_parent"
+	android:orientation="vertical">
 
-	<TextView
-		android:layout_width="wrap_content"
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:layout_margin="10dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Hello World!"
+            android:textIsSelectable="true"
+			android:id="@+id/activitymainTextView1"/>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Hello World!" />
+		android:gravity="center|center_vertical|center_horizontal"
+		android:layout_margin="10dp">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="转换"
+			android:id="@+id/activitymainButton1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:layout_margin="10dp">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/activitymainImageView1"/>
+
+	</LinearLayout>
 
 </LinearLayout>
+

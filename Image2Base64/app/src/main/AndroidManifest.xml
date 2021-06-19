@@ -3,6 +3,11 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.wuxianggujun.image2base64">
 
+    <!--写入/删除您的SD卡中的内容-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    
 	<application
 		android:name=".App"
 		android:allowBackup="true"
